@@ -1,3 +1,28 @@
-# This file stores configurations for your Shopify app.
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
+name = "tutorial-one"
+client_id = "352ab3bd44383e12e7d2559100a51b51"
+application_url = "https://turbo-nicaragua-markers-mistress.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
 scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://turbo-nicaragua-markers-mistress.trycloudflare.com/auth/callback",
+  "https://turbo-nicaragua-markers-mistress.trycloudflare.com/auth/shopify/callback",
+  "https://turbo-nicaragua-markers-mistress.trycloudflare.com/api/auth/callback",
+  "https://turbo-nicaragua-markers-mistress.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "buildshopexample.myshopify.com"

@@ -68,6 +68,7 @@ export const action = async ({ request }: ActionFunctionArgs) => {
 export default function Index() {
   const nav = useNavigation();
   const actionData = useActionData<typeof action>();
+  console.log({ actionData });
   const submit = useSubmit();
   const isLoading =
     ["loading", "submitting"].includes(nav.state) && nav.formMethod === "POST";
@@ -111,6 +112,9 @@ export default function Index() {
                     interface examples like an{" "}
                     <Link url="/app/additional" removeUnderline>
                       additional page in the app nav
+                    </Link>
+                    <Link url="/app/test" removeUnderline>
+                      TestyBoy
                     </Link>
                     , as well as an{" "}
                     <Link
