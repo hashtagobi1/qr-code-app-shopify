@@ -30,6 +30,7 @@
     "@shopify/shopify-api": "^8.0.2",
     "@shopify/shopify-app-remix": "^2.1.0",
     "@shopify/shopify-app-session-storage-prisma": "^2.0.0",
+    "file-saver": "^2.0.5",
     "isbot": "latest",
     "qrcode": "^1.5.3",
     "react": "^18.2.0",

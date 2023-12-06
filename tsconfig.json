@@ -7,6 +7,8 @@
     "isolatedModules": true,
     "allowSyntheticDefaultImports": true,
     "removeComments": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "allowJs": true,
@@ -18,8 +20,6 @@
     "paths": {
       "~/*": ["./app/*"]
     },
-    "types": [
-      "node", "@shopify/app-bridge-types"
-    ]
+    "types": ["node", "@shopify/app-bridge-types"]
   }
 }
